@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script>
+    window.onload = function () {
+        var bt = document.getElementById("btn");
+        bt.onclick = function (){
+            //window.location = "http://www.google.com";
+            location.assign("http://www.google.com");
+            //location.reload();
+            location.replace("http://www.google.com");
+        }
+        console.log(location);
+    }
+</script>
+<body>
+<button id="btn">click me</button>
+</body>
+</html>
